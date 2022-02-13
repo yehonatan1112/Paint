@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85C1E9"
+    tools:context=".PaintActivity">
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/colorPal"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#233067"
+            android:padding="10dp"
+            android:tag="#4CAF50"
+            android:text="Color Picker"
+            android:textSize="9dp" />
+
+        <Button
+            android:id="@+id/widthPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#233067"
+            android:onClick="WidthPlus"
+            android:padding="10dp"
+            android:tag="#4CAF50"
+            android:text="Width +"
+            android:textSize="9dp" />
+
+        <Button
+            android:id="@+id/widthMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#233067"
+            android:onClick="WidthMinus"
+            android:padding="10dp"
+            android:tag="#4CAF50"
+            android:text="Width -"
+            android:textSize="9dp" />
+
+        <Button
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#233067"
+            android:onClick="FillAct"
+            android:padding="10dp"
+            android:tag="#4CAF50"
+            android:text="Fill -OFF"
+            android:textSize="9dp" />
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnLine"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="#0d98ba"
+        android:onClick="addLine"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"
+        android:tag="Line"
+        android:text="Line"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/btnRect"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        android:layout_toRightOf="@id/btnLine"
+        android:backgroundTint="#0d98ba"
+        android:onClick="addRect"
+        android:scaleType="fitXY"
+        android:src="@drawable/square"
+        android:tag="Rect"
+        android:text="Rect"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/btnCircle"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        android:layout_toRightOf="@id/btnPath"
+        android:backgroundTint="#0d98ba"
+        android:onClick="addCircle"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle"
+        android:text="Circle"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/btnPath"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        android:layout_toRightOf="@id/btnRect"
+        android:backgroundTint="#0d98ba"
+        android:onClick="addPath"
+        android:scaleType="fitXY"
+        android:src="@drawable/path"
+        android:text="Path"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#0d98ba"
+        android:text="undo"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSurface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="720dp"
+        android:layout_toRightOf="@id/btnCircle"
+        android:backgroundTint="#A4A5A4"
+        android:onClick="bigSurf"
+        android:padding="10dp"
+        android:tag="#4CAF50"
+        android:textSize="16sp" />
+</RelativeLayout>
